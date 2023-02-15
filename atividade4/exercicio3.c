@@ -49,7 +49,7 @@ int main()
     resultado = vericacaoPerfeito(n1, i, soma);
     if (resultado == 1)
     {
-        printf("perfeito");
+        printf("é perfeito");
     }
     else
     {

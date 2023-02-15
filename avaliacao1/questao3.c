@@ -1,20 +1,12 @@
 #include<stdio.h>
 
-int scanIntIntervalo(int *x, int *y)
+int sol_numero(int *x)
 {
-    printf("Digite o primeiro valor:");
+    printf("Digite um numero:");
     scanf("%d", &x);
-    printf("Digite o segundo valor:");
-    scanf("%d", &y);
-    if (x>0 & x <1000);
-    {
-        return(x);
-    }
     
-    if (y>0 & y <1000);
-    {
-        return(y);
-    }
+    
+    
   
 
 }

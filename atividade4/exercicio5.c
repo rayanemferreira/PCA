@@ -1,59 +1,31 @@
 #include <stdio.h>
 
-int par()
+int fibo(int n)
 {
-    int x = 0, i = 1, continua = 1;
+    int f1 = 0, f2 = 1, i, total = 0;
+    if (n == 1)
+        return (0);
+    if (n == 2)
+        return (1);
 
-    while (continua)
+    for (i = 3; i <= n; i++)
     {
-        printf("Digite um numero :");
-        scanf("%d", &x);
-
-        if (x % 2 == 0)
-        {
-            continua = 0;
-        }
+        total = f1 + f2;
+        f1 = f2;
+        f2 = total;
     }
-
-    return (x);
-}
-int vericacaoPerfeito(int x1, int i, int soma)
-{
-    int ehPerfeito = 0;
-    while (i < x1)
-    {
-        if (x1 % i == 0)
-        {
-            printf("o numero é divisivel por  = %d\n", i);
-            soma = soma + i;
-        }
-
-        i++;
-    }
-    printf("a soma dos divisiveis é  = %d\n", soma);
-    if (soma == x1)
-    {
-        ehPerfeito = 1;
-    }
-    else
-    {
-        ehPerfeito = 0;
-    }
-    return (ehPerfeito);
+    return (total);
 }
 
 int main()
 {
-    int resultado, n1, i = 1, soma = 0;
-    n1 = par();
-    resultado = vericacaoPerfeito(n1, i, soma);
-    if (resultado == 1)
+    int j, n33;
+    printf("digite um numero para a sequencia de Fibonacci");
+    scanf("%d", &n33);
+    for (j = 1; j <= n33; j++)
     {
-        printf("perfeito");
+        printf("%d:  %d\n", j, fibo(j));
     }
-    else
-    {
-        printf("não é perfeito");
-    }
+
     return 0;
 }
