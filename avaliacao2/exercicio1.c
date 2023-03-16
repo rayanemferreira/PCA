@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char **adicionaUmAluno(char vetor1[12][300], char nome[300]) // return matrix
+char **adicionaUmAluno(char vetor1[12][300], char nome[300])
 {
     char **matrix;
 

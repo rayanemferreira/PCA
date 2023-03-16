@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+//varias manipulacao com str
 int main(void)
 {
     int valor;
@@ -19,7 +19,7 @@ int main(void)
     case 1:
         printf("digite uma palavra: ");
         scanf("%s", &c);
-        printf(" uma palavra:%s ", c);
+        printf("%s", c);
 
         break;
 
@@ -58,7 +58,7 @@ int main(void)
         }
 
         invertida[j] = '\0';
-        printf("\n palavra inertida:\t%s\n", invertida);
+        printf("\n palavra invertida:\t%s\n", invertida);
 
         break;
     

@@ -21,7 +21,7 @@ int main()
 
     char invertida[10];
     printf("digite uma palavra: ");
-    scanf("%s", c);
+    scanf("%s", &c);
     
     int j = 0;
     for(int i=strlen(c)-1; i>=0;i--) {

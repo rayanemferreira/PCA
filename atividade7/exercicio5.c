@@ -35,6 +35,7 @@ int main()
             {
             colsoma= colsoma + matriz[fila][1];
             }
+            
         }
     }
     printf("soma da linha é: %d\n",soma);
@@ -50,4 +51,8 @@ int main()
             }
         }
     }
+    for(fila = 0; fila < 3; fila++){
+        printf(" digonal secundaria é: %d ", matriz[fila ][coluna - 1 - fila]);
+    }
+    printf("\n\n");
 }

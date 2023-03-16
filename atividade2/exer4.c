@@ -4,7 +4,7 @@ int main()
 {
     int n, i = 1, maior = 0, menor=0;
     
-    while (i <= 20)
+    while (i <= 3)
     {
         printf("Digite um numero: ");
         scanf("%d", &n);
